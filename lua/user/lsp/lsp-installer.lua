@@ -15,10 +15,10 @@ local on_attach = require("user.lsp.handlers").on_attach
 local capabilities = require("user.lsp.handlers").capabilities
 
 for _, server in ipairs(lsp_installer.get_installed_servers()) do
-	if server.name == "jsonls" then
-		local jsonls_opts = require("user.lsp.settings.jsonls")
-		opts = vim.tbl_deep_extend("force", jsonls_opts, opts)
-	end
+	-- if server.name == "jsonls" then
+	-- 	local jsonls_opts = require("user.lsp.settings.jsonls")
+	-- 	opts = vim.tbl_deep_extend("force", jsonls_opts, opts)
+	-- end
 	if server.name == "lua_ls" then
 		local sumneko_opts = require("user.lsp.settings.lua_ls")
 		opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
