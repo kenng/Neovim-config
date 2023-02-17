@@ -11,3 +11,7 @@ require "user.comment"
 require "user.gitsigns"
 require "user.nvim-tree"
 require "user.bufferline"
+
+vim.cmd('source ~/confignewserver/myvim-common/vim-common-config.vim')
+vim.cmd('source ~/confignewserver/myvim-common/user/ctrlp.vim')
+--vim.cmd('source ~/confignewserver/myvim-common/syntax/markdown.vim')
