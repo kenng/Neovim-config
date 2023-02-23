@@ -104,7 +104,7 @@ cmp.setup {
       vim_item.menu = ({
         nvim_lsp = "[LSP]",
         luasnip = "[Snippet]",
-        buffer = "[Buffer]",
+        -- buffer = "[Buffer]",
         path = "[Path]",
       })[entry.source.name]
       return vim_item
@@ -113,7 +113,7 @@ cmp.setup {
   sources = {
     { name = "nvim_lsp" },
     { name = "luasnip" },
-    { name = "buffer" },
+    -- { name = "buffer" },
     { name = "path" },
   },
   confirm_opts = {
